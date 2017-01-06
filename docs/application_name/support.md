@@ -7,4 +7,4 @@ layout: default
 
 To receive support, post an issue in our [github issues](https://github.com/GSA/GSA-APIs/issues).
 
-<body id="Support"></body>s
+<body id="Support"></body>
