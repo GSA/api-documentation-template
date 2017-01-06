@@ -7,4 +7,14 @@ layout: default
 
 Frequently asked questions, and answers to them.
 
-<body id="FAQ"></body>s
+Q: Here is a question?
+A: Here is an answer.
+
+Q: Here is a question?
+A: Here is an answer.
+
+Q: Here is a question?
+A: Here is an answer.
+
+
+<body id="FAQ"></body>
