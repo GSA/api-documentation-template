@@ -4,13 +4,20 @@ title: API Basics
 nav: basics
 ---
 
-### API basics
+### Getting Started
 
-The current version of the API lieves at ```https://api.gsa.gov/path```.
+The current version of the API lives at ```https://api.gsa.gov/v3/path```.
 
 - One example of a way to use it.
 - Another example of a way to use it.
 
+#### Versions
+
+| Version | Date | Changes
+| ------------- | -------------|
+| ```version 1``` | 1/1/2095 | Initial deployment
+| ```version 2``` | 3/1/2096 | Changed data structure to fit congressional mandate
+| ```version 3``` | 3/1/2099 | Request pattern changed for new requirements
 
 ##### Endpoints
 High level description of the primary endpoint.
