@@ -15,7 +15,7 @@ We built the API to be as self-documenting as possible, but if you find yourself
 - [API calls](console/) gives you a hands-on experience of those operations with an interactive console.
 - [Field reference](fields.html) lists and describes the type of information provided by the API.
 - [Frequently Asked Questions (FAQ)](FAQ.html) Here are answers to some frequently asked questions.
-- [Need support?](getting_support.html) If you need support, this is the place to look.
+- [Contact Us](contact_us.html) If you need support or need to get in touch, this is the place to look.
 
 
 <body id="overview"></body>
