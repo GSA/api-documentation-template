@@ -8,14 +8,12 @@ This provides a consistent look and feel across our APIs throughout the organiza
 Thanks to CFPB team for creating this model and for furthering open source in government.  Additional inspiration from the 18F and the SAM (IAE) teams, as well as [Kin Lane](https://apievangelist.com/).
 
 ## Using This Template In GitHub Pages
-Currently this template is configured to work on GitHub pages. To use it in this manner, one of these options will work:
+Currently this template is configured to work on GitHub pages. The easiest way to use this template is by [forking this repo](https://help.github.com/articles/fork-a-repo/) and using it as a starting point for your own project. You can keep the doco in its own repo, or include your project's code in the same repo.
 
-### If API Documentation Will Reside In Repository With Program Code: Copy the "Docs" folder to your project's GitHub repository
-This is probably the quickest method. You can clone this repository to a local repository, then copy the entire Docs folder into your repository's master branch. 
+Take whatever you you like about it and make it your own!
 
-### 2. Duplicate this repository
-Basically creating a copy of this and not forking the original. There are a couple of methods to do this. Here are the instructions from GitHub: https://help.github.com/articles/duplicating-a-repository/
+## If You Decide Not To Fork It
+If you choose to use this template in some other fashion, please let us know by [adding an issue](https://github.com/GSA/api-documentation-template/issues) in this project's issues. We would like to keep track of how it is benefitting other projects.
 
-### For Either Option above:
-
-If you want these docs to be the documentation for your entire repository, configure this in your repository settings in GitHub. To be even nicer to users, you can also edit the link on the home page of your repository.
+## Helping us improve
+Please feel free to add issues and pull requests for any recommendations you think would be worthwhile for all users of the template.
