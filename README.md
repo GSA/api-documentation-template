@@ -10,12 +10,12 @@ Thanks to CFPB team for creating this model and for furthering open source in go
 ## Using This Template In GitHub Pages
 Currently this template is configured to work on GitHub pages. To use it in this manner, one of these options will work:
 
-### 1. Copy the "Docs" folder to your project's GitHub repository
+### If API Documentation Will Reside In Repository With Program Code: Copy the "Docs" folder to your project's GitHub repository
 This is probably the quickest method. You can clone this repository to a local repository, then copy the entire Docs folder into your repository's master branch. 
 
 ### 2. Duplicate this repository
 Basically creating a copy of this and not forking the original. There are a couple of methods to do this. Here are the instructions from GitHub: https://help.github.com/articles/duplicating-a-repository/
 
-### For Option #1 and #2:
+### For Either Option above:
 
 If you want these docs to be the documentation for your entire repository, configure this in your repository settings in GitHub. To be even nicer to users, you can also edit the link on the home page of your repository.
