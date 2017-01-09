@@ -13,4 +13,4 @@ Be sure to check out our [Frequently Asked Questions page]("FAQ.html), which may
 ### Alternate Contact
 If you are unable to post an an issue in GitHub, email us at [example@gsa.gov](example@gsa.gov).
 
-<body id="getting_support"></body>
+<body id="contact_us"></body>
