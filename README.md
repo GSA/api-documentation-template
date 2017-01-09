@@ -23,8 +23,6 @@ Hit enter, and you should see a working copy of the documentation in your browse
 #### Step 5: Update the web page on your repo's Code tab
 On your repository's "Code" tab, Click the edit button next to the label "View example documentation here". Change the description to fit your purposes and paste the URL from step 4 in the "Website" box. 
 
-Take whatever you you like about it and make it your own!
-
 ## If You Decide Not To Fork It
 If you choose to use this template in some other fashion, please let us know by [adding an issue](https://github.com/GSA/api-documentation-template/issues) in this project's issues. We would like to keep track of how it is benefitting other projects.
 
