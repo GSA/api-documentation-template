@@ -8,7 +8,7 @@ This provides a consistent look and feel across our APIs throughout the organiza
 Thanks to CFPB team for creating this model and for furthering open source in government.  Additional inspiration from the 18F and the SAM (IAE) teams, as well as [Kin Lane](https://apievangelist.com/).
 
 ## Using This Template In GitHub Pages
-Currently this template is configured to work on GitHub pages. The easiest way to use this template is by [forking this repo](https://help.github.com/articles/fork-a-repo/) and using it as a starting point for your own project. You can keep the doco in its own repo, or include your project's code in the same repo.
+Currently this template is configured to work on GitHub pages. The easiest way to use this template is by [forking this repo](https://github.com/GSA/api-documentation-template/blob/master/README.md#fork-destination-box) and using it as a starting point for your own project. You can keep the doco in its own repo, or include your project's code in the same repo.
 
 Take whatever you you like about it and make it your own!
 
