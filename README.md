@@ -12,8 +12,10 @@ We recommend that your API documentation reside in a dedicated repository -- sep
 
 It is also helpful to put a link on the "Code" tab of your GitHub repo to the working docs page (see above for example). Notice that you should add "/api-docs/" to the location that GitHub generates, to find the home page of your doco.
 
-## Note About Swagger
-This example contains a demonstration of the Swagger UI to provide interactive sample calls to the API. This is based on the [Open API Specification](http://swagger.io/specification/) for modeling the API. Other options for API modeling include [RAML](http://raml.org/), [API Blueprint](https://apiblueprint.org/), and several more.   
+## Note About The API Calls
+The "API Calls" tab of this documentation is a demonstration of the Swagger UI to provide interactive sample calls to the API. Most of this resides in the "console" sub-folder.
+
+This is using the [Open API Specification](http://swagger.io/specification/). Other options provide similar modeling and tooling, including [RAML](http://raml.org/), [API Blueprint](https://apiblueprint.org/), and several more.
 
 ## Helping us improve
 Please feel free to add issues and pull requests for any recommendations you think would be worthwhile for all users of the template.
