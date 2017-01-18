@@ -23,7 +23,11 @@ The source URL for this repository (used in both methods below) is: https://gith
 
 We recommend that your API documentation reside in a dedicated repository -- separate from your API code. However, these pages reside in the "docs" so that they can also be included inside a repo with API code. Either way, you will need to update the Settings/Github Pages "source" to use "master/docs". 
 
-It is also helpful to put a link on the "Code" tab of your GitHub repo to the working docs page (see above for example). Notice that you should add "/api-docs/" to the location that GitHub generates, to find the home page of your doco.
+### Making the cloned repository your own
+* Modify the readme.md in the master branch with the name and details of your own documentation.
+* Enable the GitHub pages web site by going to "Settings". In the "GitHub Pages" section, select "Master Branch /docs folder" and click the save button.
+* GitHub will display a URL to your documentation web site. You will need to add "api-docs/" to this path to access the web site.
+* You can add the link to this web page on "code" tab of your repository (see this repo for an example). Go to the "code" tab of your repository, and click the "edit" button toward the top of the page. Enter the URL to your doco (remember to add "api-docs/") in the "website" box, and add your own description in the "Description" box. Click save. You should see the link at the top of the "code" tab.
 
 ## Note About The API Calls
 The "API Calls" tab of this documentation is a demonstration of the Swagger UI to provide interactive sample calls to the API. Most of this resides in the "console" sub-folder.
