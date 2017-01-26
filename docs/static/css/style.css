@@ -217,7 +217,7 @@ table {
 th {
     text-align: left;
     font-family: "Avenir Next Demi", Arial, sans-serif;
-    background-color: #dbedd4;
+    background-color: #CDE3F1;
 }
 
 tr, th, td {
@@ -361,7 +361,7 @@ nav a:visited {
 
 nav li:hover {
     color: #75787b;
-    border-left: 4px solid #2CB34A;
+    border-left: 4px solid #09C;
     background-color: transparent;
     border-bottom: 1px solid #d0d0ce;
     padding-left: 0;
@@ -369,7 +369,7 @@ nav li:hover {
 
 nav li:active {
     color: #75787b;
-    border-left: 4px solid #2CB34A;
+    border-left: 4px solid #09C;
     background-color: transparent;
     border-bottom: 1px solid #d0d0ce;
     padding-left: 0;
@@ -400,7 +400,7 @@ nav li {
 #overview a.overview {
     color: #101820;
     border-bottom: none;
-    border-left: 4px solid #2CB34A;
+    border-left: 4px solid #09C;
     background-color: transparent;
     margin-left: -4px;
 }
@@ -466,7 +466,7 @@ ul.repo-list.no-padding {
 }
 
 .header {
-    border-bottom: 4px solid #2CB34A;
+    border-bottom: 4px solid #09C;
     width: 100%;
     background-color: #fff;
     /*position: fixed;*/

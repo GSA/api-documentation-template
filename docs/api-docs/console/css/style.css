@@ -174,7 +174,7 @@ pre, code {
     border-radius: 0.250em;
     overflow-x: auto;
     padding: 0.125em 0.250em;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 pre, code, kbd, samp {
@@ -361,7 +361,7 @@ nav a:visited {
 
 nav li:hover {
     color: #75787b;
-    border-left: 4px solid #2CB34A;
+    border-left: 4px solid #09c;
     background-color: transparent;
     border-bottom: 1px solid #d0d0ce;
     padding-left: 0;
@@ -369,7 +369,7 @@ nav li:hover {
 
 nav li:active {
     color: #75787b;
-    border-left: 4px solid #2CB34A;
+    border-left: 4px solid #09C;
     background-color: transparent;
     border-bottom: 1px solid #d0d0ce;
     padding-left: 0;
@@ -392,7 +392,7 @@ nav li {
 #overview a.overview {
     color: #101820;
     border-bottom: none;
-    border-left: 4px solid #2CB34A;
+    border-left: 4px solid #09C;
     background-color: transparent;
     margin-left: -4px;
 }
@@ -408,7 +408,7 @@ nav li {
 #console a.console {
     color: #101820;
     border-bottom: none;
-    border-left: 4px solid #2CB34A;
+    border-left: 4px solid #09C;
     background-color: transparent;
     margin-left: -4px;
 }
@@ -424,7 +424,7 @@ nav li {
 #fields a.fields {
     color: #101820;
     border-bottom: none;
-    border-left: 4px solid #2CB34A;
+    border-left: 4px solid #09C;
     background-color: transparent;
     margin-left: -4px;
 }
@@ -498,7 +498,7 @@ ul.repo-list.no-padding {
 }
 
 .header {
-    border-bottom: 4px solid #2CB34A;
+    border-bottom: 4px solid #09c;
     width: 100%;
     background-color: #fff;
     /*position: fixed;*/
@@ -1134,9 +1134,14 @@ del {
 
 .open .expandable-button:before {
   content: "\f056";
+}
 
 /* custom class as .hidden is already used in the guide */
 .expandable-hidden {
   display: none;
 }
 
+/* fix swagger ul */
+#swagger-ui-container ul {
+    margin-left: 0;
+}
