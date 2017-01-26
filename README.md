@@ -3,7 +3,7 @@ API Documentation Template
 
 This a documentation template for GSA APIs provided by GSA Digital Services to provide a consistent look and feel for GSA APIs.  
 
-Thanks to CFPB team for creating this model and for furthering open source in government.  Additional inspiration from the 18F and the SAM (IAE) teams, as well as several in the private sector.
+Thanks to CFPB team for creating this model and for furthering open source in government.  Additional thanks to the 18F and SAM (IAE) teams as well as several in the private sector.
 
 ## Using This Template In GitHub Pages
 Currently this template is configured to work on GitHub pages. The easiest way to use this template is by cloning this repo and using it as a starting point for your own project. 
@@ -27,7 +27,7 @@ We recommend that your API documentation reside in a dedicated repository -- sep
 * Modify the readme.md in the master branch with the name and details of your own documentation.
 * Enable the GitHub pages web site by going to "Settings". In the "GitHub Pages" section, select "Master Branch /docs folder" and click the save button.
 * GitHub will display a URL to your documentation web site. You will need to add "api-docs/" to this path to access the web site.
-* You can add the link to this web page on "code" tab of your repository (see this repo for an example). Go to the "code" tab of your repository, and click the "edit" button toward the top of the page. Enter the URL to your doco (remember to add "api-docs/") in the "website" box, and add your own description in the "Description" box. Click save. You should see the link at the top of the "code" tab.
+* You can add the link to this web page on the "code" tab of your repository (see this repo for an example). Go to the "code" tab of your repository, and click the "edit" button toward the top of the page. Enter the URL to your documentation (remember to add "api-docs/") in the "website" box, and add your own description in the "Description" box. Click save. You should see the link at the top of the "code" tab.
 
 ## Note About The API Calls
 The "API Calls" tab of this documentation is a demonstration of the Swagger UI to provide interactive sample calls to the API. Most of this resides in the "console" sub-folder.

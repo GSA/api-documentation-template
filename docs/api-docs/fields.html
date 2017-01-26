@@ -1,41 +1,204 @@
 ---
 layout: default
 title: Field Reference
-nav: fields
+nav: fields 
 ---
 
-<h3>Field reference for HMDA LAR data</h3>
+<h3>Field reference for Sample API data</h3>
 
-<p>Why so many rows and fields? Don't be alarmed–there's a lot of information in HMDA LAR data, 
-but you can make your queries as basic or as detailed as you want.</p>
+<p>The fields below are returned in the Sample API.</p> 
+<p>Add additional information about fields.</p> 
 
-<p>Use this page as a cheat sheet when you are ready to add color to some basic queries. You can 
-also skim this table to get an idea of the kinds of information you can find in these records.</p> 
 
-<p>If you are new to HMDA LAR data, that's not a problem. <a href="http://consumerfinance.gov/hmda#video">Watch this video</a> to get started, and then <a href="http://consumerfinance.gov/hmda/learn-more.html">check out these resources</a> to learn about the nitty gritty details of the data.<p>
+<h5>Example API Fields</h5>
 
-<h5>HMDA Loan Application Register fields</h5>
-<div class="mobile-warning">
-
-              <i class="icon-error-alt"></i> We recommend viewing this table in landscape mode on your mobile device.
-
-            </div>
-<table id="hmda-lar-fields" class="field-table">
+<table id="city-pairs-fields" class="field-table">
 	<colgroup>
 		<col span="1" style="width: 36%;">
-		<col span="1" style="width: 31.6%;">
-		<col span="1" style="width: 16.65%;">
-		<col span="1" style="width: 15.75%;">
+		<col span="1" style="width: 36%;">
+		<col span="1" style="width: 18%;">
+		
 	</colgroup>
 <thead>
 <tr>
 <th>Field name</th>
 <th>Description</th>
 <th>Data type</th>
-<th>Indexed?</th>
+
 </tr>
 </thead>
 <tbody>
+
+<tr>
+	<td>
+		<code>ID</code>
+		</td>
+	<td>Unique identifier.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>ITEM_NUM</code>
+		</td>
+	<td>Item number.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>AWARD_YEAR</code>
+		</td>
+	<td>Award Year.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>ORIGIN_AIRPORT_ABBREV</code>
+		</td>
+	<td>Origin Airport Abbreviation.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>DESTINATION_AIRPORT_ABBREV</code>
+		</td>
+	<td>Destination Airport Abbreviation.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>ORIGIN_CITY_NAME</code>
+		</td>
+	<td>Origin City Name.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>ORIGIN_STATE</code>
+		</td>
+	<td>Origin State.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>ORIGIN_COUNTRY</code>
+		</td>
+	<td>Origin Country.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>DESTINATION_CITY_NAME</code>
+		</td>
+	<td>Destination City Name.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>DESTINATION_STATE</code>
+		</td>
+	<td>Destination State.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>DESTINATION_COUNTRY</code>
+		</td>
+	<td>Destination Country.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>AIRLINE_ABBREV</code>
+		</td>
+	<td>Airline Abbreviation.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>AWARDED_SERV</code>
+		</td>
+	<td>Awarded Serv.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>PAX_COUNT</code>
+		</td>
+	<td>PAX Count.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>YCA_FARE</code>
+		</td>
+	<td>YCA Fare.</td>
+	<td>string</td>
+	</tr>
+
+
+<tr>
+	<td>
+		<code>XCA_FARE</code>
+		</td>
+	<td>XCA Fare.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>BUSINESS_FARE</code>
+		</td>
+	<td>Business Fare.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>ORIGIN_AIRPORT_LOCATION</code>
+		</td>
+	<td>Origin Airport Location.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>DESTINATION_AIRPORT_LOCATION</code>
+		</td>
+	<td>Destination Airport Location.</td>
+	<td>string</td>
+	</tr>
+
+
+<tr>
+	<td>
+		<code>ORIGIN_CITY_STATE_AIRPORT</code>
+		</td>
+	<td>Origin City State Airport.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>DESTINATION_CITY_STATE_AIRPORT</code>
+		</td>
+	<td>Destination City State Airport.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>EXPIRATION_DATE</code>
+		</td>
+	<td>Expiration Date.</td>
+	<td>string</td>
+	</tr>
+
+
 </tbody>
 </table>
 
