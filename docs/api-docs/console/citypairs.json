@@ -17,7 +17,7 @@
         "/airfares": {
             "get": {
                 "summary": "Negotiated airfares",
-                "description": "The Airfares endpoint returns negotiated airfaires.\n",
+                "description": "This endpoint returns negotiated airfaires.\n",
                 "parameters": [
                     {
                         "name": "award_year",
@@ -30,18 +30,54 @@
                     {
                         "name": "origin_airport_abbrev",
                         "in": "query",
-                        "description": "Origin airport abbreviation. Example: 'ABQ'",
-                        "required": true,
+                        "description": "Origin airport abbreviation. Example: 'ABQ'. Must include either this or the destination airport abbreviation.",
+                        "required": false,
                         "type": "string",
                         "format": "string"
                     },
                     {
                         "name": "destination_airport_abbrev",
                         "in": "query",
-                        "description": "Destination airport abbreviation. Example: 'BWI'",
-                        "required": true,
+                        "description": "Destination airport abbreviation. Example: 'BWI'. Must include either this or the origination airport abbreviation.",
+                        "required": false,
                         "type": "string",
                         "format": "string"
+                    }
+                ],
+                "tags": [
+                    ""
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An array of airfares",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Airfare"
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/airfares/{id}": {
+            "get": {
+                "summary": "Individual airfare by ID",
+                "description": "This endpoint returns one airfare by ID. (This is just for demonstration purpose. For City Pairs, the ID does not have meaning.)\n",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Unique identifier",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
                     }
                 ],
                 "tags": [
@@ -73,7 +109,7 @@
             "properties": {
                 "ID": {
                     "type": "integer",
-                    "description": "Unique identifier."
+                    "description": "Generated unique identifier."
                 },
                 "ITEM_NUM": {
                     "type": "string",
@@ -160,7 +196,7 @@
                     "type": "string",
                     "format": "date-time",
                     "description": "Expiration Date."
-                },                
+                },
                 "EXPIRATION_DATE": {
                     "type": "string",
                     "format": "date-time",
