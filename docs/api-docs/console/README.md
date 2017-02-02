@@ -16,6 +16,6 @@ The Swagger UI container is injected into the DOM by JavaScript. If you are look
 <div id="swagger-ui-container" class="swagger-ui-wrap"> 
 ```
 
-The actual contents of the Swagger UI Container are generated on the fly from the source OAS specification file: /console/cityapirs.json 
+The actual contents of the Swagger UI Container are generated on the fly from the source OAS specification file: /console/citypairs.json 
 
 This file can be edited with the online tool: [editor.swagger.io](http://editor.swagger.io/).
