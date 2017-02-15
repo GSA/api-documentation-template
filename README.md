@@ -16,6 +16,7 @@ The source URL for this repository (used in both methods below) is: https://gith
 
 ### Cloning this repository from the Github web interface
 * From your github home page, select "[start a project](https://github.com/new)" or "[new repository](https://github.com/new)".
+* Create this repository in the GSA organization.
 * Enter the appropriate information for the new repository you are creating. Do not select "initialize this repository with readme".
 * On the next page, select "import code from another repository".
 * The next page is titled "Import Your Project To Github". In the box below "Your old repository’s clone URL", enter the source URL for this repository (listed above). Click "begin import".
@@ -25,6 +26,7 @@ We recommend that your API documentation reside in a dedicated repository -- sep
 
 ### Making the cloned repository your own
 * Modify the readme.md in the master branch with the name and details of your own documentation.
+* In the repository settings, make this repository public. (Keep in mind you won't be able to put sensitive information in it.)
 * Enable the GitHub pages web site by going to "Settings". In the "GitHub Pages" section, select "Master Branch /docs folder" and click the save button.
 * GitHub will display a URL to your documentation web site. You will need to add "api-docs/" to this path to access the web site.
 * You can add the link to this web page on the "code" tab of your repository (see this repo for an example). Go to the "code" tab of your repository, and click the "edit" button toward the top of the page. Enter the URL to your documentation (remember to add "api-docs/") in the "website" box, and add your own description in the "Description" box. Click save. You should see the link at the top of the "code" tab.
