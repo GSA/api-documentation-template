@@ -5,7 +5,7 @@
         "description": "Prototype project to demonstrate GSA API Standards and API Documentation Template.",
         "version": "0.0.0"
     },
-    "host": "citypairsapi.app.cloud.gov",
+    "host": "cityPairsPrototypeAPI.app.cloud.gov",
     "schemes": [
         "https"
     ],
