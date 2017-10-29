@@ -1,7 +1,8 @@
 <link href='_pages/console/css/highlight.default.css' media='screen' rel='stylesheet' type='text/css'/>
   <link href='_pages/console/css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
   <link rel="stylesheet" href="_pages/console/css/style.css">
-<script src='_pages/console/lib/object-assign-pollyfill.js' type='text/javascript'></script>
+  <link rel="stylesheet" type="text/css" href="_pages/console/swagger-ui.css">
+<!--<script src='_pages/console/lib/object-assign-pollyfill.js' type='text/javascript'></script>
 <script src='_pages/console/lib/jquery-1.8.0.min.js' type='text/javascript'></script>
 <script src='_pages/console/lib/jquery.slideto.min.js' type='text/javascript'></script>
 <script src='_pages/console/lib/jquery.wiggle.min.js' type='text/javascript'></script>
@@ -15,6 +16,9 @@
 <script src='_pages/console/lib/jsoneditor.min.js' type='text/javascript'></script>
 <script src='_pages/console/lib/marked.js' type='text/javascript'></script>
 <script src='_pages/console/lib/swagger-oauth.js' type='text/javascript'></script>
+-->
+<script src="_pages/console/swagger-ui-bundle.js"> </script>
+<script src="_pages/console/swagger-ui-standalone-preset.js"> </script>
 
   <!-- Some basic translations -->
   <!-- <script src='lang/translator.js' type='text/javascript'></script> -->
@@ -22,58 +26,23 @@
   <!-- <script src='lang/en.js' type='text/javascript'></script> -->
 
   <script type="text/javascript">
-    $(function () {
-      var url = window.location.search.match(/url=([^&]+)/);
-      if (url && url.length > 1) {
-        url = decodeURIComponent(url[1]);
-      } else {
-        url = "../_pages/console/citypairs.json";
-      }
+  window.onload = function() {
 
-      hljs.configure({
-        highlightSizeThreshold: 5000
-      });
+    // Build a system
+    const ui = SwaggerUIBundle({
+      url: "_pages/console/citypairs.json",
+      dom_id: '#swagger-ui-container',
+      deepLinking: true,
+      presets: [
+        SwaggerUIBundle.presets.apis,
+        SwaggerUIStandalonePreset
+      ],
+      plugins: [
+        SwaggerUIBundle.plugins.DownloadUrl
+      ],
+      layout: "StandaloneLayout"
+    })
 
-      // Pre load translate...
-      if(window.SwaggerTranslator) {
-        window.SwaggerTranslator.translate();
-      }
-      window.swaggerUi = new SwaggerUi({
-        url: url,
-        dom_id: "swagger-ui-container",
-        supportedSubmitMethods: ['get', 'post', 'put', 'delete', 'patch'],
-        onComplete: function(swaggerApi, swaggerUi){
-          if(typeof initOAuth == "function") {
-            initOAuth({
-              clientId: "your-client-id",
-              clientSecret: "your-client-secret-if-required",
-              realm: "your-realms",
-              appName: "your-app-name",
-              scopeSeparator: " ",
-              additionalQueryStringParams: {}
-            });
-          }
-
-          if(window.SwaggerTranslator) {
-            window.SwaggerTranslator.translate();
-          }
-        },
-        onFailure: function(data) {
-          log("Unable to Load SwaggerUI");
-        },
-        docExpansion: "full",
-        jsonEditor: false,
-        defaultModelRendering: 'schema',
-        showRequestHeaders: false,
-        showOperationIds: false
-      });
-
-      window.swaggerUi.load();
-
-      function log() {
-        if ('console' in window) {
-          console.log.apply(console, arguments);
-        }
-      }
-  });
+    window.ui = ui
+  }
   </script>

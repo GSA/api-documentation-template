@@ -7,8 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {% if page.title == 'Console' %}
-  <!-- console included -->
+
+    <!-- console included -->
     {% include swagger_console.html %}
+    <!-- style overrides specific to console -->
+    <style>
+        pre.version {
+            background-color: inherit;
+            border: none;
+            border-radius: inherit;
+        }
+
+        section.servers>div>label>select {
+            width: 100%;
+        }
+    </style>
   {% else %}
     <link rel="stylesheet" href="static/css/style.css">
   {% endif %}
