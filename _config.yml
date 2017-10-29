@@ -4,3 +4,9 @@ highlighter: rouge
 safe: true
 baseurl: ""
 exclude: ['.ruby-version', 'node_modules', 'package.json', 'bower.json']
+include:
+  - '_pages'
+  - 'static'
+defaults:
+  - values:
+      layout: default

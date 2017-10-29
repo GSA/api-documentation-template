@@ -2,6 +2,7 @@
 layout: default
 title: Contribute
 nav: contribute
+permalink: /contribute
 ---
 ### Open source contributing
 
