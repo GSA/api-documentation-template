@@ -32,8 +32,12 @@ We recommend that your API documentation reside in a dedicated repository -- sep
 * You can add the link to this web page on the "code" tab of your repository (see this repo for an example). Go to the "code" tab of your repository, and click the "edit" button toward the top of the page. Enter the URL to your documentation in the "website" box, and add your own description in the "Description" box. Click save. You should see the link at the top of the "code" tab.
 
 ### Running the Repository Locally
+#### Jekyll
 * This repository requires a local Jekyll environment to run locally. Full instructions are available on the Jekyll website [here](https://jekyllrb.com/docs/installation/)
 * Once installed, remain in base directory and in the terminal and enter `jekyll serve`
+
+#### HTML Standalone (Jekyll-less)
+* A static version of the site which does not rely on Jekyll is available in the example folder. To use, simply open index.html in your browser.
 
 ## Note About The API Calls
 The "API Calls" tab of this documentation is a demonstration of the Swagger UI to provide interactive sample calls to the API. Most of this resides in the "console" sub-folder.

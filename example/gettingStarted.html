@@ -1,0 +1,159 @@
+<html>
+<head>
+  <title>Example API documentation - GSA</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="static/css/normalize.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+    <link rel="stylesheet" href="static/css/style.css">
+  
+</head>
+
+<body>
+
+
+
+  <header class="header cf" role="banner">
+      			<div class="wrap">
+
+			<a href="https://gsa.gov/developer" target="_blank"><h1><span>GSA</span> Open Tech</h1></a>
+
+            <a href="https://gsa.gov/" target="_blank">
+                <img class="logo" src="static/img/GSAlogo.gif" alt="General Services Administration logo">
+            </a>
+
+        	</a>
+        	</div>
+
+  </header>
+
+  <div class="wrap">
+    <div class="content">
+
+    <aside>
+    
+<h1 class="page-title"><a href=".">GSA Example <br>API docs</a></h1>
+      <p class="intro">Example text about your API.</p>
+    <nav>
+        <ul>
+          <li><a href="." class="overview">Overview</a></li>
+          <li><a href="gettingStarted" class="getting_started">Getting Started</a></li>
+          <li><a href="console" class="console">API calls</a></li>
+          <li><a href="fields" class="fields">Field reference</a></li>
+          <li><a href="FAQ" class="faq">Frequently Asked Questions</a></li>
+          <li><a href="contactUs" class="contact_us">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    </aside>
+
+    <section class="main-content" role="main">
+      <h3 id="getting-started">Getting Started</h3>
+
+<p>The current version of the API lives at <code class="highlighter-rouge">https://api.gsa.gov/v3/path</code>.</p>
+
+<ul>
+  <li>One example of a way to use it.</li>
+  <li>Another example of a way to use it.</li>
+</ul>
+
+<h4 id="versions">Versions</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Version</th>
+      <th>Date</th>
+      <th>Changes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">version 1</code></td>
+      <td>1/1/2095</td>
+      <td>Initial deployment</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">version 2</code></td>
+      <td>3/1/2096</td>
+      <td>Changed data structure to fit congressional mandate</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">version 3</code></td>
+      <td>3/1/2099</td>
+      <td>Request pattern changed for new requirements</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="endpoints">Endpoints</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">/citypairs/airfares</code></td>
+      <td>Returns an array of Airfares based on query parameters</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">/citypairs/airfares/{id}</code></td>
+      <td>Returns an array of Airfares based on unique identifier. Array will contain one airfare. (This is just for demonstration purpose. For City Pairs, the ID does not have meaning.)</td>
+    </tr>
+  </tbody>
+</table>
+
+<body id="basics"></body>
+
+    </section>
+
+    </div>
+  </div> <!--wrap-->
+
+    <footer class="footer cf" role="contentinfo">
+      <div class="wrap">
+        
+            <section class="footer-oss">
+                <h4>Open source</h4>
+                <p>
+                    As a work of the United States Government, source code released by the GSA is in the public
+                    domain by default within the United States.
+                    <a href="https://www.gsa.gov/portal/directive/d0/content/536641">
+                        View our full source code policy.
+                    </a>
+                </p>
+            </section>
+
+
+            <section class="footer-links">
+                <ul>
+                    <li>
+                        <a href="http://www.gsa.gov/">gsa.gov</a>
+                    </li>
+                    <li>
+                        <a href="http://open.gsa.gov/developer">open.gsa.gov/developer</a>
+                    </li>
+                    <li>
+                        <a href="http://github.com/gsa">github.com/gsa</a>
+                    </li>
+                </ul>
+            </section>
+
+
+
+
+      </div>
+    </footer>
+    <!-- the following js files cause conflicts with Swagger -->
+    
+  <script src="static/js/docs.min.js"></script>
+  <script type="text/javascript" src="static/js/expandables.js"></script>
+  
+</body>
+</html>
