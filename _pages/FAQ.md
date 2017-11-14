@@ -1,9 +1,9 @@
 ---
 published: true
 layout: default
-
+permalink: /FAQ
 ---
-### Frequently Asked Questions 
+### Frequently Asked Questions
 
 
 **Q: Here is a question?**
