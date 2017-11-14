@@ -2,7 +2,7 @@
 layout: default
 title: Getting Support
 nav: getting_support
-permalink: /gettingSupport
+
 ---
 ### Support
 

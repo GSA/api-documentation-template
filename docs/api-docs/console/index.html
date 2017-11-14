@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  
+  <title>GSA Example API Docs</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="../../static/css/normalize.css">
+  
+  <link href='css/highlight.default.css' media='screen' rel='stylesheet' type='text/css'/> 
+  <link href='css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <!--[if IE]>
+  <link rel="stylesheet" href="css/for-ie-only.css">
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+
+
+
+
+  <!-- <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <title>Swagger UI</title>
+  -->
+  
+  
+  <!-- <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <link href='css/typography.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='css/reset.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='css/reset.css' media='print' rel='stylesheet' type='text/css'/>
+  <link href='css/print.css' media='print' rel='stylesheet' type='text/css'/>
+-->
+  <script src='lib/object-assign-pollyfill.js' type='text/javascript'></script>
+  <script src='lib/jquery-1.8.0.min.js' type='text/javascript'></script>
+  <script src='lib/jquery.slideto.min.js' type='text/javascript'></script>
+  <script src='lib/jquery.wiggle.min.js' type='text/javascript'></script>
+  <script src='lib/jquery.ba-bbq.min.js' type='text/javascript'></script>
+  <script src='lib/handlebars-4.0.5.js' type='text/javascript'></script>
+  <script src='lib/lodash.min.js' type='text/javascript'></script>
+  <script src='lib/backbone-min.js' type='text/javascript'></script>
+  <script src='swagger-ui.js' type='text/javascript'></script>
+  <script src='lib/highlight.9.1.0.pack.js' type='text/javascript'></script>
+  <script src='lib/highlight.9.1.0.pack_extended.js' type='text/javascript'></script>
+  <script src='lib/jsoneditor.min.js' type='text/javascript'></script>
+  <script src='lib/marked.js' type='text/javascript'></script>
+  <script src='lib/swagger-oauth.js' type='text/javascript'></script>
+
+  <!-- Some basic translations -->
+  <!-- <script src='lang/translator.js' type='text/javascript'></script> -->
+  <!-- <script src='lang/ru.js' type='text/javascript'></script> -->
+  <!-- <script src='lang/en.js' type='text/javascript'></script> -->
+
+  <script type="text/javascript">
+    $(function () {
+      var url = window.location.search.match(/url=([^&]+)/);
+      if (url && url.length > 1) {
+        url = decodeURIComponent(url[1]);
+      } else {
+        url = "citypairs.json";
+      }
+
+      hljs.configure({
+        highlightSizeThreshold: 5000
+      });
+
+      // Pre load translate...
+      if(window.SwaggerTranslator) {
+        window.SwaggerTranslator.translate();
+      }
+      window.swaggerUi = new SwaggerUi({
+        url: url,
+        dom_id: "swagger-ui-container",
+        supportedSubmitMethods: ['get', 'post', 'put', 'delete', 'patch'],
+        onComplete: function(swaggerApi, swaggerUi){
+          if(typeof initOAuth == "function") {
+            initOAuth({
+              clientId: "your-client-id",
+              clientSecret: "your-client-secret-if-required",
+              realm: "your-realms",
+              appName: "your-app-name",
+              scopeSeparator: " ",
+              additionalQueryStringParams: {}
+            });
+          }
+
+          if(window.SwaggerTranslator) {
+            window.SwaggerTranslator.translate();
+          }
+        },
+        onFailure: function(data) {
+          log("Unable to Load SwaggerUI");
+        },
+        docExpansion: "full",
+        jsonEditor: false,
+        defaultModelRendering: 'schema',
+        showRequestHeaders: false,
+        showOperationIds: false
+      });
+
+      window.swaggerUi.load();
+
+      function log() {
+        if ('console' in window) {
+          console.log.apply(console, arguments);
+        }
+      }
+  });
+  </script>
+</head>
+
+
+
+ <body class="swagger-section" id="console">
+<!--<div id='header'>
+   <div class="swagger-ui-wrap">
+    <a id="logo" href="http://swagger.io"><img class="logo__img" alt="swagger" height="30" width="30" src="images/logo_small.png" /><span class="logo__title">swagger</span></a>
+    <form id='api_selector'>
+      <div class='input'><input placeholder="http://example.com/api" id="input_baseUrl" name="baseUrl" type="text"/></div>
+      <div id='auth_container'></div>
+      <div class='input'><a id="explore" class="header__btn" href="#" data-sw-translate>Explore</a></div>
+    </form>
+  </div> 
+</div>-->
+
+<!-- <div id="message-bar" class="swagger-ui-wrap" data-sw-translate>&nbsp;</div>-->
+
+<header class="header cf" role="banner">
+            <div class="wrap">
+ <a href="https://gsa.gov/" target="_blank">
+                <img class="logo" src="../../static/img/GSAlogo.gif" alt="General Services Administration logo">
+            </a>
+            
+            <a href="https://gsa.gov/developer" target="_blank">
+            <h1><span>GSA</span> Open Tech</h1>
+          </a>
+          </div>
+
+  </header>
+
+<div class="wrap">
+    <div class="content">
+
+    <aside>
+
+<h1 class="page-title"><a href="..">GSA Example <br>API docs</a></h1>
+      <p class="intro">Example text about your API.</p>
+    <nav>    
+        <ul>
+          <li><a href="../" class="overview">Overview</a></li>
+          <li><a href="../getting_started.html" class="getting_started">Getting Started</a></li>
+          <li><a href="../console/" class="console">API calls</a></li>
+          <li><a href="../fields.html" class="fields">Field reference</a></li>
+          <li><a href="../FAQ.html" class="faq">Frequently Asked Questions</a></li>
+          <li><a href="../contact_us.html" class="contact_us">Contact Us</a></li>
+        </ul>
+    </nav>
+    </aside>
+
+    <section class="main-content" role="main">
+
+      <h3 id='api_calls'>API calls</h3>
+
+<p>Explore the API here hands-on. </p>
+  
+  <p>This API supports a data response in JSON format.</p>
+  <p>You can view the definition of this API in <a href="http://swagger.io/specification/">OpenAPI Specification 2.0</a> format in this file: <a href="citypairs.json">citypairs.json</a> </p>
+  
+  <p>Need a little help? Read our <a href="../getting_started.html">Getting Started</a> to learn about using the API.</p>
+
+<div id="message-bar" class="swagger-ui-wrap">
+</div>
+
+
+
+<span class="anchor" id="swagger-ui-offset-fix"> </span>
+
+<div id="swagger-ui-container" class="swagger-ui-wrap"></div>
+</section>
+
+</div>
+</div>
+
+ <footer class="footer cf" role="contentinfo">
+      <div class="wrap">
+
+        <section class="footer-oss">
+                <h4>Open source</h4>
+                <p>
+                    As a work of the United States Government, source code released by the GSA is in the public
+                    domain by default within the United States.
+                    <a href="https://www.gsa.gov/portal/directive/d0/content/536641">
+                        View our full source code policy.
+                    </a>
+                </p>
+            </section>
+
+
+            <section class="footer-links">
+                <ul>
+                    <li>
+                        <a href="http://www.gsa.gov/">gsa.gov</a>
+                    </li>
+                    <li>
+                        <a href="http://open.gsa.gov/developer">open.gsa.gov/developer</a>
+                    </li>
+                    <li>
+                        <a href="http://github.com/gsa">github.com/gsa</a>
+                    </li>
+                </ul>
+            </section>
+
+
+      </div>
+    </footer>
+
+</body>
+</html>
