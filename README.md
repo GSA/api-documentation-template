@@ -1,6 +1,8 @@
 API Documentation Template
 ====================
 
+ ***Coming in early 2019: Updated API documentation template***
+
 This a documentation template for GSA APIs provided by GSA Digital Services to provide a consistent look and feel for GSA APIs.  
 
 Thanks to CFPB team for creating this model and for furthering open source in government.  Additional thanks to the 18F and SAM (IAE) teams as well as several in the private sector.
