@@ -1,7 +1,9 @@
+***2019 Update: Instead of using this template, GSA teams can host their API documention directly on the GSA API directory. Instructions are avaialable here: https://github.com/GSA/open-gsa-redesign/blob/master/APIDOCS.md***
+
+
 API Documentation Template
 ====================
 
- ***Coming in early 2019: Updated API documentation template***
 
 This a documentation template for GSA APIs provided by GSA Digital Services to provide a consistent look and feel for GSA APIs.  
 
